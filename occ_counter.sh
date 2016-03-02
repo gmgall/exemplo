@@ -6,6 +6,10 @@
 # "3","Aburria jacutinga",-47.98,-24.1756
 # "18","Aburria jacutinga",-54.44626,-25.68337
 
+# Verifica se o arquivo de ocorrências pode ser lido
+[ ! -e "$1" ] && { echo "Não consigo ler $1"; exit 1; }
+
+# Mostra a lista com a contagem das ocorrências
 sed -n '1,$p' "$1" |
 	cut -f4 -d\" |
 	sort |
