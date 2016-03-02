@@ -23,4 +23,6 @@ Exemplo de saída:
      49 Alopochelidon fucata
      20 Aburria jacutinga
      15 Amaurospiza moesta
+
+Total de espécies: 163 
 ```
