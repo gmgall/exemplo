@@ -10,7 +10,7 @@
 [ ! -e "$1" ] && { echo "Não consigo ler $1"; exit 1; }
 
 # Gera lista com a contagem das ocorrências
-LISTA="$(sed -n '1,$p' "$1" |
+LISTA="$(sed -n '2,$p' "$1" |
 	cut -f4 -d\" |
 	sort |
 	uniq -c |
